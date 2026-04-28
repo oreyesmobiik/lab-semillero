@@ -1,0 +1,1309 @@
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428111903
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg5, region=eastus
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Network'
+ADVERTENCIA: Algunos nombres de comando importados del m?dulo 'Microsoft.Azure.PowerShell.Cmdlets.Network' incluyen verbos no aprobados que podr?an dificultar su reconocimiento. Para encontrar los comandos con verbos no aprobados, vuelva a ejecutar el comando Import-Module con el par?metro Verbose. Para obtener una lista de verbos aprobados, escriba Get-Verb.
+VNet CoreServicesVnet creada
+VNet ManufacturingVnet creada
+INFORMACI?N: Loaded Module 'Az.Compute'
+PS>ErrorTerminaci?n(Add-Type): "No se pueden cargar uno o varios tipos requeridos. Recupere la propiedad LoaderExceptions para obtener m?s informaci?n."
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 08c58df0-7620-4f69-b025-0a9259326d22"
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 08c58df0-7620-4f69-b025-0a9259326d22"
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 08c58df0-7620-4f69-b025-0a9259326d22"
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 08c58df0-7620-4f69-b025-0a9259326d22"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 08c58df0-7620-4f69-b025-0a9259326d22
+New-AzVM : The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions:
+Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a
+different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions:
+Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a
+different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase:
+OperationID : 08c58df0-7620-4f69-b025-0a9259326d22
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 116 Car?cter: 5
++     New-AzVM -ResourceGroupName $ResourceGroupName -Location $Locatio ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzVM], ComputeCloudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.Compute.NewAzureVMCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 152 Car?cter: 42
++ Write-Host "Tamano de VM seleccionado en $Location: $selectedVmSize"
++                                          ~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable v?lido. 
+Considere la posibilidad de usar ${} para delimitar el nombre.
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 152 Car?cter: 42
++ Write-Host "Tamano de VM seleccionado en $Location: $selectedVmSize"
++                                          ~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable
+v?lido. Considere la posibilidad de usar ${} para delimitar el nombre.
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428112203
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428112203
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg5, region=eastus
+PS>ErrorTerminaci?n(Get-AzVMSize): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'Location'."
+>> ErrorTerminaci?n(Get-AzVMSize): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'Location'."
+>> ErrorTerminaci?n(Get-AzVMSize): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'Location'."
+>> ErrorTerminaci?n(Get-AzVMSize): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'Location'."
+No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'Location'.
+Get-AzVMSize : No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'Location'.
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 71 Car?cter: 37
++     $availableSizes = (Get-AzVMSize -Location $Region).Name
++                                     ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-AzVMSize], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Azure.Commands.Compute.GetAzureVMSizeCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428112315
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428112315
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg5, region=eastus
+PS>ErrorTerminaci?n(Get-AzVMSize): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'Location'."
+PS>ErrorTerminaci?n(): "No se encontro ningun tamano de VM disponible en la region 'eastus'. Probados: Standard_D2s_v3, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_B2ms, Standard_B2s"
+>> ErrorTerminaci?n(): "No se encontro ningun tamano de VM disponible en la region 'eastus'. Probados: Standard_D2s_v3, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_B2ms, Standard_B2s"
+>> ErrorTerminaci?n(): "No se encontro ningun tamano de VM disponible en la region 'eastus'. Probados: Standard_D2s_v3, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_B2ms, Standard_B2s"
+No se encontro ningun tamano de VM disponible en la region 'eastus'. Probados: Standard_D2s_v3, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_B2ms, Standard_B2s
+No se encontro ningun tamano de VM disponible en la region 'eastus'. Probados: Standard_D2s_v3,
+Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_B2ms, Standard_B2s
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 106 Car?cter: 5
++     throw "No se encontro ningun tamano de VM disponible en la region ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (No se encontro ...s, Standard_B2s:String) [], RuntimeExcept
+   ion
+    + FullyQualifiedErrorId : No se encontro ningun tamano de VM disponible en la region 'eastus'. Probados:
+    Standard_D2s_v3, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_B2ms, Standard_B2s
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1 -Location eastus2
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 236 Car?cter: 30
++ Write-Host "Tamano usado por $coreVmName: $coreVmSelectedSize"
++                              ~~~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable v?lido. 
+Considere la posibilidad de usar ${} para delimitar el nombre.
+
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 237 Car?cter: 30
++ Write-Host "Tamano usado por $manufacturingVmName: $manufacturingVmSe ...
++                              ~~~~~~~~~~~~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable v?lido. 
+Considere la posibilidad de usar ${} para delimitar el nombre.
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 236 Car?cter: 30
++ Write-Host "Tamano usado por $coreVmName: $coreVmSelectedSize"
++                              ~~~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable
+v?lido. Considere la posibilidad de usar ${} para delimitar el nombre.
+
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 237 Car?cter: 30
++ Write-Host "Tamano usado por $manufacturingVmName: $manufacturingVmSe ...
++                              ~~~~~~~~~~~~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable
+v?lido. Considere la posibilidad de usar ${} para delimitar el nombre.
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 236 Car?cter: 30
++ Write-Host "Tamano usado por $coreVmName: $coreVmSelectedSize"
++                              ~~~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable v?lido. 
+Considere la posibilidad de usar ${} para delimitar el nombre.
+
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 237 Car?cter: 30
++ Write-Host "Tamano usado por $manufacturingVmName: $manufacturingVmSe ...
++                              ~~~~~~~~~~~~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable v?lido. 
+Considere la posibilidad de usar ${} para delimitar el nombre.
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 236 Car?cter: 30
++ Write-Host "Tamano usado por $coreVmName: $coreVmSelectedSize"
++                              ~~~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable
+v?lido. Considere la posibilidad de usar ${} para delimitar el nombre.
+
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 237 Car?cter: 30
++ Write-Host "Tamano usado por $manufacturingVmName: $manufacturingVmSe ...
++                              ~~~~~~~~~~~~~~~~~~~~~
+La referencia de variable no es v?lida. El car?cter ':' no va seguido de un car?cter de nombre de variable
+v?lido. Considere la posibilidad de usar ${} para delimitar el nombre.
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428113105
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428113105
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg5, region=eastus
+Tamano de VM solicitado: Standard_D2s_v3
+Orden de intento de tamanos en eastus: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+VNet CoreServicesVnet ya existia
+VNet ManufacturingVnet ya existia
+Intentando crear VM CoreServicesVM con tamano Standard_D2s_v3
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 652ad817-c786-40d1-b3fc-fe04a04cd5ac"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_D2s_v3. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 652ad817-c786-40d1-b3fc-fe04a04cd5ac
+Intentando crear VM CoreServicesVM con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 6568d134-5f44-4b64-825f-64e4096c970c"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B1s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 6568d134-5f44-4b64-825f-64e4096c970c
+Intentando crear VM CoreServicesVM con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 9d3882f2-b683-473b-8863-16cf5ed13103"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B1ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 9d3882f2-b683-473b-8863-16cf5ed13103
+Intentando crear VM CoreServicesVM con tamano Standard_DS1_v2
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 39a3436a-da6e-490d-9eaf-a1a6a082b724"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_DS1_v2. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 39a3436a-da6e-490d-9eaf-a1a6a082b724
+Intentando crear VM CoreServicesVM con tamano Standard_B2s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : daf66e7d-2d0e-475c-919b-bfcea7806f98"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B2s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : daf66e7d-2d0e-475c-919b-bfcea7806f98
+Intentando crear VM CoreServicesVM con tamano Standard_B2ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 527d33ea-9866-4ebd-aaf4-eab61bdd8dec"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B2ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 527d33ea-9866-4ebd-aaf4-eab61bdd8dec
+Intentando crear VM CoreServicesVM con tamano Standard_D2as_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 0a25a2cb-6c24-4cdc-aacb-1a60b9c9ca91"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_D2as_v5. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 0a25a2cb-6c24-4cdc-aacb-1a60b9c9ca91
+PS>ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3,
+Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 207 Car?cter: 5
++     throw "No fue posible crear la VM '$VmName' en '$Location' con lo ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (No fue posible ...tandard_D2as_v5:String) [], RuntimeExcept
+   ion
+    + FullyQualifiedErrorId : No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probad
+   os: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard
+  _D2as_v5
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1 -Location eastus2
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428113140
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428113140
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg5, region=eastus2
+PS>ErrorTerminaci?n(New-AzResourceGroup): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Invalid resource group location 'eastus2'. The Resource group already exists in location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 8b8eb997-30ac-4328-9353-d389b3d0daf9"
+>> ErrorTerminaci?n(New-AzResourceGroup): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Invalid resource group location 'eastus2'. The Resource group already exists in location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 8b8eb997-30ac-4328-9353-d389b3d0daf9"
+>> ErrorTerminaci?n(New-AzResourceGroup): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Invalid resource group location 'eastus2'. The Resource group already exists in location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 8b8eb997-30ac-4328-9353-d389b3d0daf9"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Invalid resource group location 'eastus2'. The Resource group already exists in location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 8b8eb997-30ac-4328-9353-d389b3d0daf9
+New-AzResourceGroup : Invalid resource group location 'eastus2'. The Resource group already exists in
+location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 8b8eb997-30ac-4328-9353-d389b3d0daf9
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 211 Car?cter: 1
++ New-AzResourceGroup -Name $ResourceGroupName -Location $Location -For ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzResourceGroup], ResourceManagerCloudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.NewAzureResour
+   ceGroupCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428113232
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428113233
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg5, region=eastus
+Tamano de VM solicitado: Standard_D2s_v3
+Orden de intento de tamanos en eastus: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+VNet CoreServicesVnet ya existia
+VNet ManufacturingVnet ya existia
+Intentando crear VM CoreServicesVM con tamano Standard_D2s_v3
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : b2a74a20-e347-488a-9fbc-8d60ba123298"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_D2s_v3. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : b2a74a20-e347-488a-9fbc-8d60ba123298
+Intentando crear VM CoreServicesVM con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : f1db3f01-29fa-49c5-ad5c-a0e4219e1d4c"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B1s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : f1db3f01-29fa-49c5-ad5c-a0e4219e1d4c
+Intentando crear VM CoreServicesVM con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 80f10ea9-73a2-42f7-8b69-7cf8631262e4"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B1ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 80f10ea9-73a2-42f7-8b69-7cf8631262e4
+Intentando crear VM CoreServicesVM con tamano Standard_DS1_v2
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 3d1bf4b2-925b-4e25-8021-76e5ba7878d0"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_DS1_v2. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 3d1bf4b2-925b-4e25-8021-76e5ba7878d0
+Intentando crear VM CoreServicesVM con tamano Standard_B2s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 391af1b1-4f42-42b3-9f30-88afc49905e1"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B2s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 391af1b1-4f42-42b3-9f30-88afc49905e1
+Intentando crear VM CoreServicesVM con tamano Standard_B2ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : f45788cb-bae6-480f-b925-dc5b89b283a5"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B2ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : f45788cb-bae6-480f-b925-dc5b89b283a5
+Intentando crear VM CoreServicesVM con tamano Standard_D2as_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : baac9883-ff1f-4a17-8060-704f7cb90ee2"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_D2as_v5. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : baac9883-ff1f-4a17-8060-704f7cb90ee2
+PS>ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3,
+Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 207 Car?cter: 5
++     throw "No fue posible crear la VM '$VmName' en '$Location' con lo ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (No fue posible ...tandard_D2as_v5:String) [], RuntimeExcept
+   ion
+    + FullyQualifiedErrorId : No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probad
+   os: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard
+  _D2as_v5
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428113302
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428113302
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg5, region=eastus
+Tamano de VM solicitado: Standard_D2s_v3
+Orden de intento de tamanos en eastus: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+VNet CoreServicesVnet ya existia
+VNet ManufacturingVnet ya existia
+Intentando crear VM CoreServicesVM con tamano Standard_D2s_v3
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 9e5a4e9e-8a61-4cc3-ac1e-ac33f27f3b27"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_D2s_v3. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 9e5a4e9e-8a61-4cc3-ac1e-ac33f27f3b27
+Intentando crear VM CoreServicesVM con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 92aaad6b-6849-4b1a-b2cf-4428d0aa9102"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B1s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 92aaad6b-6849-4b1a-b2cf-4428d0aa9102
+Intentando crear VM CoreServicesVM con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 9f7f30f7-595d-4760-be76-51abba441736"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B1ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 9f7f30f7-595d-4760-be76-51abba441736
+Intentando crear VM CoreServicesVM con tamano Standard_DS1_v2
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : d88717f3-8aad-4b53-afab-9064ca6e2154"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_DS1_v2. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : d88717f3-8aad-4b53-afab-9064ca6e2154
+Intentando crear VM CoreServicesVM con tamano Standard_B2s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 29da0028-4a5a-42ba-83c1-ff08dd7a7c8f"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B2s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 29da0028-4a5a-42ba-83c1-ff08dd7a7c8f
+Intentando crear VM CoreServicesVM con tamano Standard_B2ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 89259245-3681-4ddb-b7bd-88c68ded4cfa"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B2ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 89259245-3681-4ddb-b7bd-88c68ded4cfa
+Intentando crear VM CoreServicesVM con tamano Standard_D2as_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : a04610ce-ca1e-4f84-9819-05eabbd9cc6c"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_D2as_v5. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : a04610ce-ca1e-4f84-9819-05eabbd9cc6c
+PS>ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3,
+Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 207 Car?cter: 5
++     throw "No fue posible crear la VM '$VmName' en '$Location' con lo ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (No fue posible ...tandard_D2as_v5:String) [], RuntimeExcept
+   ion
+    + FullyQualifiedErrorId : No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probad
+   os: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard
+  _D2as_v5
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428113328
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428113328
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg5, region=eastus
+Tamano de VM solicitado: Standard_D2s_v3
+Orden de intento de tamanos en eastus: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+VNet CoreServicesVnet ya existia
+VNet ManufacturingVnet ya existia
+Intentando crear VM CoreServicesVM con tamano Standard_D2s_v3
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 6a47500d-7df7-4132-bcef-7155a0e07dba"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_D2s_v3. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 6a47500d-7df7-4132-bcef-7155a0e07dba
+Intentando crear VM CoreServicesVM con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 99a827b9-0390-4eca-b506-a5f8856b18a8"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B1s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 99a827b9-0390-4eca-b506-a5f8856b18a8
+Intentando crear VM CoreServicesVM con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : f94b1a84-cc3f-4ccf-b2fe-08c3719b4338"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B1ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : f94b1a84-cc3f-4ccf-b2fe-08c3719b4338
+Intentando crear VM CoreServicesVM con tamano Standard_DS1_v2
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 366ac7ae-531a-4d81-abd7-fe09f16ec513"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_DS1_v2. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 366ac7ae-531a-4d81-abd7-fe09f16ec513
+Intentando crear VM CoreServicesVM con tamano Standard_B2s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 3b1baedb-e34d-41d8-8468-4fa45de9194d"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B2s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 3b1baedb-e34d-41d8-8468-4fa45de9194d
+Intentando crear VM CoreServicesVM con tamano Standard_B2ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 7cca20d7-7135-4a6f-9654-9dadcd0d853a"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_B2ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 7cca20d7-7135-4a6f-9654-9dadcd0d853a
+Intentando crear VM CoreServicesVM con tamano Standard_D2as_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 99e986e5-2cad-44a7-a9fb-b686529524bb"
+ADVERTENCIA: No se pudo crear CoreServicesVM con Standard_D2as_v5. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 99e986e5-2cad-44a7-a9fb-b686529524bb
+PS>ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5"
+No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probados: Standard_D2s_v3,
+Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 207 Car?cter: 5
++     throw "No fue posible crear la VM '$VmName' en '$Location' con lo ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (No fue posible ...tandard_D2as_v5:String) [], RuntimeExcept
+   ion
+    + FullyQualifiedErrorId : No fue posible crear la VM 'CoreServicesVM' en 'eastus' con los tamanos probad
+   os: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard
+  _D2as_v5
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1 -Location eastus2
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428113442
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428113442
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg5, region=eastus2
+PS>ErrorTerminaci?n(New-AzResourceGroup): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Invalid resource group location 'eastus2'. The Resource group already exists in location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 7086213d-d680-4005-aa29-043789cfbfb5"
+>> ErrorTerminaci?n(New-AzResourceGroup): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Invalid resource group location 'eastus2'. The Resource group already exists in location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 7086213d-d680-4005-aa29-043789cfbfb5"
+>> ErrorTerminaci?n(New-AzResourceGroup): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Invalid resource group location 'eastus2'. The Resource group already exists in location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 7086213d-d680-4005-aa29-043789cfbfb5"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Invalid resource group location 'eastus2'. The Resource group already exists in location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 7086213d-d680-4005-aa29-043789cfbfb5
+New-AzResourceGroup : Invalid resource group location 'eastus2'. The Resource group already exists in
+location 'eastus'.
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : 7086213d-d680-4005-aa29-043789cfbfb5
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 211 Car?cter: 1
++ New-AzResourceGroup -Name $ResourceGroupName -Location $Location -For ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzResourceGroup], ResourceManagerCloudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.NewAzureResour
+   ceGroupCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1 -Location eastus2
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428113605
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428113605
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg05, region=eastus2
+Tamano de VM solicitado: Standard_D2s_v3
+Orden de intento de tamanos en eastus2: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+VNet CoreServicesVnet creada
+VNet ManufacturingVnet creada
+Intentando crear VM CoreServicesVM con tamano Standard_D2s_v3
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+VM CoreServicesVM creada con tamano Standard_D2s_v3
+Intentando crear VM ManufacturingVM con tamano Standard_D2s_v3
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+VM ManufacturingVM creada con tamano Standard_D2s_v3
+Tamano usado por CoreServicesVM: Standard_D2s_v3
+Tamano usado por ManufacturingVM: Standard_D2s_v3
+Prueba de conectividad antes de peering: Unreachable
+PS>ErrorTerminaci?n(Add-AzVirtualNetworkPeering): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'AllowVirtualNetworkAccess'."
+>> ErrorTerminaci?n(Add-AzVirtualNetworkPeering): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'AllowVirtualNetworkAccess'."
+>> ErrorTerminaci?n(Add-AzVirtualNetworkPeering): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'AllowVirtualNetworkAccess'."
+No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'AllowVirtualNetworkAccess'.
+Add-AzVirtualNetworkPeering : No se encuentra ning?n par?metro que coincida con el nombre del par?metro
+'AllowVirtualNetworkAccess'.
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 252 Car?cter: 122
++ ... ualNetworkId $manufacturingVnet.Id -AllowVirtualNetworkAccess -AllowF ...
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Add-AzVirtualNetworkPeering], ParentContainsErrorRecordExcepti
+   on
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Azure.Commands.Network.AddAzureVirtualNetworkPeerin
+   gCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1 -Location eastus2
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428122003
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428122003
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg05, region=eastus2
+Tamano de VM solicitado: Standard_D2s_v3
+Orden de intento de tamanos en eastus2: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+VNet CoreServicesVnet ya existia
+VNet ManufacturingVnet ya existia
+VM CoreServicesVM ya existia
+VM ManufacturingVM ya existia
+Tamano usado por CoreServicesVM: Standard_D2s_v3
+Tamano usado por ManufacturingVM: Standard_D2s_v3
+Prueba de conectividad antes de peering: Unreachable
+Peering CoreServicesVnet-to-ManufacturingVnet creado
+Peering ManufacturingVnet-to-CoreServicesVnet creado
+Prueba de conectividad despues de peering: Reachable
+PS>ErrorTerminaci?n(): "No se puede indizar en una matriz nula."
+>> ErrorTerminaci?n(): "No se puede indizar en una matriz nula."
+No se puede indizar en una matriz nula.
+No se puede indizar en una matriz nula.
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 292 Car?cter: 1
++ $coreNicId = (Get-AzVM -ResourceGroupName $ResourceGroupName -Name $c ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : NullArray
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1 -Location eastus2
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428122315
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428122315
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg05, region=eastus2
+Tamano de VM solicitado: Standard_D2s_v3
+Orden de intento de tamanos en eastus2: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+VNet CoreServicesVnet ya existia
+VNet ManufacturingVnet ya existia
+VM CoreServicesVM ya existia
+VM ManufacturingVM ya existia
+Tamano usado por CoreServicesVM: Standard_D2s_v3
+Tamano usado por ManufacturingVM: Standard_D2s_v3
+Prueba de conectividad antes de peering: Reachable
+Prueba de conectividad despues de peering: Reachable
+Resultado Run Command desde ManufacturingVM hacia CoreServicesVM:
+ComputerName RemoteAddress RemotePort TcpTestSucceeded
+------------ ------------- ---------- ----------------
+10.0.0.4     10.0.0.4            3389             True
+PS>ErrorTerminaci?n(Set-AzVirtualNetworkSubnetConfig): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Subnet with the specified name does not exist"
+>> ErrorTerminaci?n(Set-AzVirtualNetworkSubnetConfig): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Subnet with the specified name does not exist"
+>> ErrorTerminaci?n(Set-AzVirtualNetworkSubnetConfig): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Subnet with the specified name does not exist"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Subnet with the specified name does not exist
+Set-AzVirtualNetworkSubnetConfig : Subnet with the specified name does not exist
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecutar-lab05.ps1: 323 Car?cter: 5
++     Set-AzVirtualNetworkSubnetConfig -Name $perimeterSubnetName -Virt ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzVirtualNetworkSubnetConfig], ArgumentException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.Network.SetAzureVirtualNetworkSubnetConfigCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\ejecutar-lab05.ps1 -Location eastus2
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428122527
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428122527
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 1576
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
+Iniciando LAB 05 en RG=az104-rg05, region=eastus2
