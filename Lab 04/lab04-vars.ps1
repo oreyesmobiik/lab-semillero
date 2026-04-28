@@ -1,0 +1,5 @@
+﻿$ResourceGroupName = 'az104-rg4'
+$Location = 'eastus'
+$PublicDnsZoneName = 'contoso32864.com'
+$PrivateDnsZoneName = 'private.contoso32864.com'
+$PublicNameServer = 'ns1-01.azure-dns.com.'

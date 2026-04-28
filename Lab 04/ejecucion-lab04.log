@@ -1,0 +1,302 @@
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428085938
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 22976
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 04\ejecucion-lab04.log
+Iniciando LAB 04 en RG=az104-rg4, region=eastus
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Network'
+ADVERTENCIA: Algunos nombres de comando importados del m?dulo 'Microsoft.Azure.PowerShell.Cmdlets.Network' incluyen verbos no aprobados que podr?an dificultar su reconocimiento. Para encontrar los comandos con verbos no aprobados, vuelva a ejecutar el comando Import-Module con el par?metro Verbose. Para obtener una lista de verbos aprobados, escriba Get-Verb.
+PS>ErrorTerminaci?n(New-AzVirtualNetwork): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource 'CoreServicesVnet' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"Allowed locations for landing zone resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/providers/Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-locations"},"policyDefinition":{"name":"Allowed locations","id":"/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","version":"1.1.0"}}]'.
+StatusCode: 403
+ReasonPhrase: Forbidden
+ErrorCode: RequestDisallowedByPolicy
+Target: CoreServicesVnet
+ErrorMessage: Resource 'CoreServicesVnet' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"Allowed locations for landing zone resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/providers/Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-locations"},"policyDefinition":{"name":"Allowed locations","id":"/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","version":"1.1.0"}}]'.
+OperationID : 085dbfea-ac53-4fa2-a00c-ac82868fbadf"
+>> ErrorTerminaci?n(New-AzVirtualNetwork): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource 'CoreServicesVnet' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"Allowed locations for landing zone resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/providers/Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-locations"},"policyDefinition":{"name":"Allowed locations","id":"/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","version":"1.1.0"}}]'.
+StatusCode: 403
+ReasonPhrase: Forbidden
+ErrorCode: RequestDisallowedByPolicy
+Target: CoreServicesVnet
+ErrorMessage: Resource 'CoreServicesVnet' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"Allowed locations for landing zone resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/providers/Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-locations"},"policyDefinition":{"name":"Allowed locations","id":"/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","version":"1.1.0"}}]'.
+OperationID : 085dbfea-ac53-4fa2-a00c-ac82868fbadf"
+>> ErrorTerminaci?n(New-AzVirtualNetwork): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource 'CoreServicesVnet' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"Allowed locations for landing zone resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/providers/Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-locations"},"policyDefinition":{"name":"Allowed locations","id":"/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","version":"1.1.0"}}]'.
+StatusCode: 403
+ReasonPhrase: Forbidden
+ErrorCode: RequestDisallowedByPolicy
+Target: CoreServicesVnet
+ErrorMessage: Resource 'CoreServicesVnet' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"Allowed locations for landing zone resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/providers/Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-locations"},"policyDefinition":{"name":"Allowed locations","id":"/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","version":"1.1.0"}}]'.
+OperationID : 085dbfea-ac53-4fa2-a00c-ac82868fbadf"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource 'CoreServicesVnet' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"Allowed locations for landing zone resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/providers/Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-locations"},"policyDefinition":{"name":"Allowed locations","id":"/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","version":"1.1.0"}}]'.
+StatusCode: 403
+ReasonPhrase: Forbidden
+ErrorCode: RequestDisallowedByPolicy
+Target: CoreServicesVnet
+ErrorMessage: Resource 'CoreServicesVnet' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"Allowed locations for landing zone resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/providers/Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-locations"},"policyDefinition":{"name":"Allowed locations","id":"/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","version":"1.1.0"}}]'.
+OperationID : 085dbfea-ac53-4fa2-a00c-ac82868fbadf
+New-AzVirtualNetwork : Resource 'CoreServicesVnet' was disallowed by policy.
+Policy identifiers: '[{"policyAssignment":{"name":"Allowed locations for
+landing zone resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e
+66/providers/Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-lo
+cations"},"policyDefinition":{"name":"Allowed locations","id":"/providers/Micro
+soft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","ver
+sion":"1.1.0"}}]'.
+StatusCode: 403
+ReasonPhrase: Forbidden
+ErrorCode: RequestDisallowedByPolicy
+Target: CoreServicesVnet
+ErrorMessage: Resource 'CoreServicesVnet' was disallowed by policy. Policy
+identifiers: '[{"policyAssignment":{"name":"Allowed locations for landing zone
+resources","id":"/subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/providers/
+Microsoft.Authorization/policyAssignments/pa-lzdemo-dev-allowed-locations"},"po
+licyDefinition":{"name":"Allowed locations","id":"/providers/Microsoft.Authoriz
+ation/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c","version":"1.1.0"
+}}]'.
+OperationID : 085dbfea-ac53-4fa2-a00c-ac82868fbadf
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+04\ejecutar-lab04.ps1: 21 Car?cter: 13
++ $coreVnet = New-AzVirtualNetwork -Name "CoreServicesVnet" -ResourceGr ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzVirtualNetwork], NetworkC
+   loudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.Network.NewAzureVirtual
+   NetworkCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$subId=(Get-AzContext).Subscription.Id; Write-Host "Subscription: $subId"; Get-AzPolicyAssignment -Scope "/subscriptions/$subId" | Select-Object Name,DisplayName,Scope,PolicyDefinitionId | Format-Table -AutoSize
+Subscription: b224cb96-1023-4b79-83ae-b32bcac33e66
+
+Name                            DisplayName
+----                            -----------
+sys.mfa-write                   Microsoft Azure Multi Factor Authentication ...
+sys.mfa-delete                  Microsoft Azure Multi Factor Authentication ...
+pa-lzdemo-dev-allowed-locations Allowed locations for landing zone resources
+SecurityCenterBuiltIn           ASC Default (subscription: b224cb96-1023-4b7...
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$subId=(Get-AzContext).Subscription.Id; Get-AzPolicyAssignment -Name 'pa-lzdemo-dev-allowed-locations' -Scope "/subscriptions/$subId" | Select-Object Name,DisplayName,Scope,NotScopes,PolicyDefinitionId,EnforcementMode,Metadata,Parameters | Format-List
+
+
+Name               : pa-lzdemo-dev-allowed-locations
+DisplayName        : Allowed locations for landing zone resources
+Scope              : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66
+NotScopes          :
+PolicyDefinitionId : /providers/Microsoft.Authorization/policyDefinitions/e5696
+                     2a6-4747-49cd-b67b-bf8b01975c4c
+EnforcementMode    : Default
+Metadata           : @{createdBy=fd619a0d-c23c-41d5-811c-ef4a70734b78;
+                     createdOn=2026-04-24T19:10:35.1827297Z}
+Parameters         :
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$subId=(Get-AzContext).Subscription.Id; $pa=Get-AzPolicyAssignment -Name 'pa-lzdemo-dev-allowed-locations' -Scope "/subscriptions/$subId"; $pa.Parameters | ConvertTo-Json -Depth 10
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$subId=(Get-AzContext).Subscription.Id; Remove-AzPolicyAssignment -Name 'pa-lzdemo-dev-allowed-locations' -Scope "/subscriptions/$subId" -Force; Get-AzPolicyAssignment -Scope "/subscriptions/$subId" | Select-Object Name,DisplayName | Format-Table -AutoSize
+
+Name                  DisplayName
+----                  -----------
+sys.mfa-write         Microsoft Azure Multi Factor Authentication Enforcemen...
+sys.mfa-delete        Microsoft Azure Multi Factor Authentication Enforcemen...
+SecurityCenterBuiltIn ASC Default (subscription: b224cb96-1023-4b79-83ae-b32...
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>& '.\Lab 04\ejecutar-lab04.ps1'
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428090652
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428090652
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 22976
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 04\ejecucion-lab04.log
+Iniciando LAB 04 en RG=az104-rg4, region=eastus
+CoreServicesVnet creado
+ManufacturingVnet creado
+ASG asg-web creado
+NSG myNSGSecure creado
+Reglas NSG configuradas
+NSG asociado a SharedServicesSubnet
+INFORMACI?N: Loaded Module 'Az.Dns'
+PS>ErrorTerminaci?n(New-AzDnsZone): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The zone 'contoso.com' is not available."
+>> ErrorTerminaci?n(New-AzDnsZone): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The zone 'contoso.com' is not available."
+>> ErrorTerminaci?n(New-AzDnsZone): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The zone 'contoso.com' is not available."
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The zone 'contoso.com' is not available.
+New-AzDnsZone : The zone 'contoso.com' is not available.
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+04\ejecutar-lab04.ps1: 45 Car?cter: 15
++ ... ublicZone = New-AzDnsZone -Name $PublicDnsZoneName -ResourceGroupName ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzDnsZone], CloudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.Dns.NewAzureDnsZone
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ErrorActionPreference='Stop';
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$rg='az104-rg4';
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$pub = 'contoso' + (Get-Random -Minimum 10000 -Maximum 99999) + '.com';
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$priv = 'private.' + $pub;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$manVnet = Get-AzVirtualNetwork -Name 'ManufacturingVnet' -ResourceGroupName $rg;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$zone = New-AzDnsZone -Name $pub -ResourceGroupName $rg;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$rs = New-AzDnsRecordSet -Name 'www' -RecordType A -ZoneName $pub -ResourceGroupName $rg -Ttl 1;
+ADVERTENCIA: Usage of this cmdlet without DnsRecords parameter will be deprecated soon. If there is a need to create empty record set, please specify DnsRecords parameter with an empty array as value
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Add-AzDnsRecordConfig -RecordSet $rs -Ipv4Address '10.1.1.4' | Set-AzDnsRecordSet | Out-Null;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$pz = New-AzPrivateDnsZone -Name $priv -ResourceGroupName $rg;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>New-AzPrivateDnsVirtualNetworkLink -ZoneName $priv -ResourceGroupName $rg -Name 'manufacturing-link' -VirtualNetworkId $manVnet.Id -EnableRegistration:$false | Out-Null;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$prs = New-AzPrivateDnsRecordSet -Name 'sensorvm' -RecordType A -ZoneName $priv -ResourceGroupName $rg -Ttl 1;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Add-AzPrivateDnsRecordConfig -RecordSet $prs -Ipv4Address '10.1.1.4' | Set-AzPrivateDnsRecordSet | Out-Null;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ns = (Get-AzDnsZone -Name $pub -ResourceGroupName $rg).NameServers | Select-Object -First 1;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>@(
+"$ResourceGroupName = '$rg'",
+"$Location = 'eastus'",
+"$PublicDnsZoneName = '$pub'",
+"$PrivateDnsZoneName = '$priv'",
+"$PublicNameServer = '$ns'"
+) | Set-Content -Path '.\Lab 04\lab04-vars.ps1' -Encoding UTF8;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host "Public zone: $pub";
+Public zone: contoso64760.com
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host "Private zone: $priv";
+Private zone: private.contoso64760.com
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host "NameServer: $ns";
+NameServer: ns1-06.azure-dns.com.
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host "nslookup command: nslookup www.$pub $ns";
+nslookup command: nslookup www.contoso64760.com ns1-06.azure-dns.com.
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-AzDnsZone -ResourceGroupName 'az104-rg4' | Select-Object Name,ResourceGroupName,ZoneType,NumberOfRecordSets | Format-Table -AutoSize; Get-AzPrivateDnsZone -ResourceGroupName 'az104-rg4' | Select-Object Name,ResourceGroupName,NumberOfRecordSets | Format-Table -AutoSize
+
+Name             ResourceGroupName ZoneType NumberOfRecordSets
+----             ----------------- -------- ------------------
+contoso64760.com az104-rg4           Public                  3
+
+
+
+Name                     ResourceGroupName NumberOfRecordSets
+----                     ----------------- ------------------
+private.contoso64760.com az104-rg4                          2
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host 'check'; Get-AzResourceGroup -Name 'az104-rg4' | Select-Object ResourceGroupName,Location,ProvisioningState | Format-Table -AutoSize
+check
+
+ResourceGroupName Location ProvisioningState
+----------------- -------- -----------------
+az104-rg4         eastus   Succeeded
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-AzResource -ResourceGroupName 'az104-rg4' | Select-Object Name,ResourceType,Location | Sort-Object ResourceType,Name | Format-Table -AutoSize
+
+Name                                        ResourceType
+----                                        ------------
+asg-web                                     Microsoft.Network/applicationSec...
+contoso64760.com                            Microsoft.Network/dnszones
+myNSGSecure                                 Microsoft.Network/networkSecurit...
+private.contoso64760.com                    Microsoft.Network/privateDnsZones
+private.contoso64760.com/manufacturing-link Microsoft.Network/privateDnsZone...
+CoreServicesVnet                            Microsoft.Network/virtualNetworks
+ManufacturingVnet                           Microsoft.Network/virtualNetworks
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-AzDnsRecordSet -ZoneName 'contoso64760.com' -ResourceGroupName 'az104-rg4' | Select-Object Name,RecordType,TTL,Records | Format-Table -AutoSize; Get-AzPrivateDnsRecordSet -ZoneName 'private.contoso64760.com' -ResourceGroupName 'az104-rg4' | Select-Object Name,RecordType,TTL,Records | Format-Table -AutoSize
+
+Name RecordType    Ttl Records
+---- ----------    --- -------
+@            NS 172800 {ns1-06.azure-dns.com., ns2-06.azure-dns.net., ns3-06...
+@           SOA   3600 {[ns1-06.azure-dns.com.,azuredns-hostmaster.microsoft...
+www           A      1 {10.1.1.4}
+
+
+
+Name     RecordType  Ttl Records
+----     ----------  --- -------
+@               SOA 3600 {[azureprivatedns.net,azureprivatedns-host.microsof...
+sensorvm          A    1 {10.1.1.4}
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>& '.\Lab 04\ejecutar-lab04.ps1'
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428091520
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428091520
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 22976
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 04\ejecucion-lab04.log
+Iniciando LAB 04 en RG=az104-rg4, region=eastus
