@@ -1,6 +1,6 @@
 [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'High')]
 param(
-    [string]$ResourceGroupName = "az104-rg5",
+    [string]$ResourceGroupName = "az104-rg05",
     [switch]$DeleteIfMissing = $false
 )
 

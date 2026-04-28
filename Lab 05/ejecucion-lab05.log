@@ -1307,3 +1307,29 @@ SerializationVersion: 1.1.0.1
 **********************
 Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\ejecucion-lab05.log
 Iniciando LAB 05 en RG=az104-rg05, region=eastus2
+Tamano de VM solicitado: Standard_D2s_v3
+Orden de intento de tamanos en eastus2: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms, Standard_D2as_v5
+VNet CoreServicesVnet ya existia
+VNet ManufacturingVnet ya existia
+VM CoreServicesVM ya existia
+VM ManufacturingVM ya existia
+Tamano usado por CoreServicesVM: Standard_D2s_v3
+Tamano usado por ManufacturingVM: Standard_D2s_v3
+Prueba de conectividad antes de peering: Reachable
+Prueba de conectividad despues de peering: Reachable
+Resultado Run Command desde ManufacturingVM hacia CoreServicesVM:
+ComputerName RemoteAddress RemotePort TcpTestSucceeded
+------------ ------------- ---------- ----------------
+10.0.0.4     10.0.0.4            3389             True
+Subnet Perimeter creado
+Route table rt-CoreServices creado
+Ruta PerimetertoCore creada
+Route table asociado a subnet Perimeter
+
+LAB 05 completado
+Conectividad antes peering: Reachable
+Conectividad despues peering: Reachable
+CoreServicesVM IP privada: 10.0.0.4
+Password generado para 'localadmin': NF9wQqE4V8N5N##x
+Variables en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\lab05-vars.ps1
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
