@@ -300,3 +300,24 @@ SerializationVersion: 1.1.0.1
 **********************
 Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 04\ejecucion-lab04.log
 Iniciando LAB 04 en RG=az104-rg4, region=eastus
+CoreServicesVnet ya existia
+ManufacturingVnet ya existia
+ASG asg-web ya existia
+NSG myNSGSecure ya existia
+Reglas NSG configuradas
+NSG asociado a SharedServicesSubnet
+PS>ErrorTerminaci?n(New-AzDnsZone): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The zone 'contoso.com' is not available."
+ADVERTENCIA: Usage of this cmdlet without DnsRecords parameter will be deprecated soon. If there is a need to create empty record set, please specify DnsRecords parameter with an empty array as value
+Zona DNS publica y registro A creados
+Zona DNS privada, link y registro creados
+
+LAB 04 completado
+Comando de validacion publica DNS: nslookup www.contoso32864.com ns1-01.azure-dns.com.
+Variables en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 04\lab04-vars.ps1
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>& '.\Lab 04\cleanup-lab04.ps1' -WhatIf
+Whatif: Se est? realizando la operaci?n "Eliminar resource group y todos sus recursos" en el destino "az104-rg4".
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>& '.\Lab 09a\cleanup-lab09a.ps1' -WhatIf
+Whatif: Se est? realizando la operaci?n "Eliminar resource group y todos sus recursos" en el destino "az104-rg9".
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
