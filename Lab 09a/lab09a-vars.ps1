@@ -1,0 +1,7 @@
+﻿$rg = 'az104-rg9'
+$location = 'eastus'
+$plan = 'az104-plan77194'
+$app = 'az104web77194'
+$slot = 'staging'
+$prodUrl = 'https://'
+$stagingUrl = 'https://'

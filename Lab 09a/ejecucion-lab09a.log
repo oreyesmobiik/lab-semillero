@@ -1,0 +1,1090 @@
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428075347
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 10312
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripci?n ha comenzado. El archivo de salida es C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log
+Log activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>winget install --id Microsoft.AzureCLI --exact --accept-source-agreements --accept-package-agreements
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>winget source reset --force; winget source update; winget install --id Microsoft.AzureCLI --exact --source winget --accept-source-agreements --accept-package-agreements
+Este comando requiere que se ejecuten privilegios de administrador.
+
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>python --version; py --version
+
+py : El t?rmino 'py' no se reconoce como nombre de un cmdlet, funci?n, archivo de script o programa ejecutable. 
+Compruebe si escribi? correctamente el nombre o, si incluy? una ruta de acceso, compruebe que dicha ruta es correcta e 
+int?ntelo de nuevo.
+En l?nea: 1 Car?cter: 19
++ python --version; py --version
++                   ~~
+    + CategoryInfo          : ObjectNotFound: (py:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+py : El t?rmino 'py' no se reconoce como nombre de un cmdlet, funci?n, archivo
+de script o programa ejecutable. Compruebe si escribi? correctamente el nombre
+o, si incluy? una ruta de acceso, compruebe que dicha ruta es correcta e
+int?ntelo de nuevo.
+En l?nea: 1 Car?cter: 19
++ python --version; py --version
++                   ~~
+    + CategoryInfo          : ObjectNotFound: (py:String) [], CommandNotFoundE
+   xception
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>python --version
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Set-PSRepository -Name PSGallery -InstallationPolicy Trusted; Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force -Scope CurrentUser; Install-Module -Name Az -Scope CurrentUser -AllowClobber -Force
+
+Name                           Version          Source           Summary
+----                           -------          ------           -------
+nuget                          2.8.5.208        https://cdn.o... NuGet provi...
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-Module -ListAvailable Az.Accounts | Select-Object Name,Version,Path | Format-Table -AutoSize
+
+Name        Version Path
+----        ------- ----
+Az.Accounts 5.3.4   C:\Users\ReyesDeLaCruzOscar(C\Documents\WindowsPowerShel...
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Connect-AzAccount
+ADVERTENCIA: Unable to acquire token for tenant '8a609129-6043-4862-a3ef-950ba4573f90' with error 'Authentication failed against tenant 8a609129-6043-4862-a3ef-950ba4573f90. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). If you need to access subscriptions in that tenant, please rerun 'Connect-AzAccount' with additional parameter '-TenantId 8a609129-6043-4862-a3ef-950ba4573f90'.'
+ADVERTENCIA: Unable to acquire token for tenant '8a609129-6043-4862-a3ef-950ba4573f90' with error 'Authentication failed against tenant 8a609129-6043-4862-a3ef-950ba4573f90. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). If you need to access subscriptions in that tenant, please rerun 'Connect-AzAccount' with additional parameter '-TenantId 8a609129-6043-4862-a3ef-950ba4573f90'.'
+
+Subscription name    Tenant
+-----------------    ------
+Azure subscription 1 Mobiik
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-AzContext | Select-Object Account,Subscription,Tenant,Environment | Format-List
+
+
+Account      : oscar.reyes@mobiik.com
+Subscription : b224cb96-1023-4b79-83ae-b32bcac33e66
+Tenant       : ff463ea8-92b7-4e5a-a417-cf03db333692
+Environment  : AzureCloud
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ErrorActionPreference = 'Stop'; Get-Command -Module Az.Websites *SourceControl* | Select-Object Name | Format-Table -AutoSize; Get-Command -Module Az.Websites *WebAppSlot* | Select-Object Name | Format-Table -AutoSize
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Websites'
+
+Name
+----
+Swap-AzWebAppSlot
+Get-AzWebAppSlotContinuousWebJob
+Get-AzWebAppSlotTriggeredWebJob
+Get-AzWebAppSlotTriggeredWebJobHistory
+Get-AzWebAppSlotWebJob
+Remove-AzWebAppSlotContinuousWebJob
+Remove-AzWebAppSlotTriggeredWebJob
+Start-AzWebAppSlotContinuousWebJob
+Start-AzWebAppSlotTriggeredWebJob
+Stop-AzWebAppSlotContinuousWebJob
+Get-AzWebAppSlot
+Get-AzWebAppSlotConfigName
+Get-AzWebAppSlotPublishingProfile
+New-AzWebAppSlot
+Remove-AzWebAppSlot
+Reset-AzWebAppSlotPublishingProfile
+Restart-AzWebAppSlot
+Set-AzWebAppSlot
+Set-AzWebAppSlotConfigName
+Start-AzWebAppSlot
+Stop-AzWebAppSlot
+Switch-AzWebAppSlot
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ErrorActionPreference = 'Stop'; & '.\Lab 09a\iniciar-logging.ps1';
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428080501
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428080501
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 10312
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$rg = 'az104-rg9';
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$location = 'eastus';
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$suffix = Get-Random -Minimum 10000 -Maximum 99999;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$plan = "az104-plan$suffix";
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$app = "az104web$suffix";
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$slot = 'staging';
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$varsPath = '.\Lab 09a\lab09a-vars.ps1';
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>New-AzResourceGroup -Name $rg -Location $location -Force | Out-Null;
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>New-AzAppServicePlan -ResourceGroupName $rg -Name $plan -Location $location -Tier PremiumV3 -WorkerSize Medium -NumberofWorkers 1 -Linux | Out-Null;
+>> ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'"
+>> ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'
+New-AzAppServicePlan : Operation returned an invalid status code 'Forbidden'
+En l?nea: 1 Car?cter: 1
++ New-AzAppServicePlan -ResourceGroupName $rg -Name $plan -Location $lo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzAppServicePlan], DefaultE
+   rrorResponseException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.WebApps.Cmdlets.AppServ
+   icePlans.NewAzureAppServicePlanCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>New-AzWebApp -ResourceGroupName $rg -Name $app -Location $location -AppServicePlan $plan -RuntimeStack 'PHP|8.2' | Out-Null;
+>> ErrorTerminaci?n(New-AzWebApp): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'RuntimeStack'."
+>> ErrorTerminaci?n(New-AzWebApp): "No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'RuntimeStack'."
+No se encuentra ning?n par?metro que coincida con el nombre del par?metro 'RuntimeStack'.
+New-AzWebApp : No se encuentra ning?n par?metro que coincida con el nombre del
+par?metro 'RuntimeStack'.
+En l?nea: 1 Car?cter: 90
++ ...  $app -Location $location -AppServicePlan $plan -RuntimeStack 'PHP|8. ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-AzWebApp], ParentConta
+   insErrorRecordException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Azure.Commands.
+   WebApps.Cmdlets.WebApps.NewAzureWebAppCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>New-AzWebAppSlot -ResourceGroupName $rg -Name $app -Slot $slot | Out-Null;
+>> ErrorTerminaci?n(New-AzWebAppSlot): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'"
+>> ErrorTerminaci?n(New-AzWebAppSlot): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'
+New-AzWebAppSlot : Operation returned an invalid status code 'NotFound'
+En l?nea: 1 Car?cter: 1
++ New-AzWebAppSlot -ResourceGroupName $rg -Name $app -Slot $slot | Out- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzWebAppSlot], DefaultError
+   ResponseException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.WebApps.Cmdlets.Deploym
+   entSlots.NewAzureWebAppSlotCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$subId = (Get-AzContext).Subscription.Id;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$path = "/subscriptions/$subId/resourceGroups/$rg/providers/Microsoft.Web/sites/$app/slots/$slot/sourcecontrols/web?api-version=2022-03-01";
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$payloadObj = @{ properties = @{ repoUrl = 'https://github.com/Azure-Samples/php-docs-hello-world'; branch = 'master'; isManualIntegration = $true } };
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$payload = $payloadObj | ConvertTo-Json -Depth 6;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Invoke-AzRestMethod -Method PUT -Path $path -Payload $payload | Out-Null;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Start-Sleep -Seconds 20;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Switch-AzWebAppSlot -ResourceGroupName $rg -Name $app -SourceSlotName $slot -DestinationSlotName 'production' | Out-Null;
+>> ErrorTerminaci?n(Switch-AzWebAppSlot): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'"
+>> ErrorTerminaci?n(Switch-AzWebAppSlot): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'
+Switch-AzWebAppSlot : Operation returned an invalid status code 'NotFound'
+En l?nea: 1 Car?cter: 1
++ Switch-AzWebAppSlot -ResourceGroupName $rg -Name $app -SourceSlotName ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Switch-AzWebAppSlot], DefaultEr
+   rorResponseException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.WebApps.Cmdlets.Deploym
+   entSlots.SwitchAzureWebAppSlot
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$prodHost = (Get-AzWebApp -ResourceGroupName $rg -Name $app).DefaultHostName;
+>> ErrorTerminaci?n(Get-AzWebApp): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'"
+>> ErrorTerminaci?n(Get-AzWebApp): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'
+Get-AzWebApp : Operation returned an invalid status code 'NotFound'
+En l?nea: 1 Car?cter: 14
++ $prodHost = (Get-AzWebApp -ResourceGroupName $rg -Name $app).DefaultH ...
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Get-AzWebApp], DefaultErrorResp
+   onseException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.WebApps.Cmdlets.WebApps
+   .GetAzureWebAppCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$stagingHost = (Get-AzWebAppSlot -ResourceGroupName $rg -Name $app -Slot $slot).DefaultHostName;
+>> ErrorTerminaci?n(Get-AzWebAppSlot): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'"
+>> ErrorTerminaci?n(Get-AzWebAppSlot): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'NotFound'
+Get-AzWebAppSlot : Operation returned an invalid status code 'NotFound'
+En l?nea: 1 Car?cter: 17
++ ... gingHost = (Get-AzWebAppSlot -ResourceGroupName $rg -Name $app -Slot  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Get-AzWebAppSlot], DefaultError
+   ResponseException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.WebApps.Cmdlets.Deploym
+   entSlots.GetAzureWebAppSlotCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>@(
+"`$rg = '$rg'",
+"`$location = '$location'",
+"`$plan = '$plan'",
+"`$app = '$app'",
+"`$slot = '$slot'",
+"`$prodUrl = 'https://$prodHost'",
+"`$stagingUrl = 'https://$stagingHost'"
+) | Set-Content -Path $varsPath -Encoding UTF8;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>"LISTO`nRG: $rg`nPlan: $plan`nApp: $app`nStaging: https://$stagingHost`nProd: https://$prodHost`nVars: $varsPath"
+LISTO
+RG: az104-rg9
+Plan: az104-plan77194
+App: az104web77194
+Staging: https://
+Prod: https://
+Vars: .\Lab 09a\lab09a-vars.ps1
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$LASTEXITCODE; 'PING_OK'; Test-Path '.\Lab 09a\lab09a-vars.ps1'; if (Test-Path '.\Lab 09a\lab09a-vars.ps1') { Get-Content '.\Lab 09a\lab09a-vars.ps1' }
+9009
+PING_OK
+True
+$rg = 'az104-rg9'
+$location = 'eastus'
+$plan = 'az104-plan77194'
+$app = 'az104web77194'
+$slot = 'staging'
+$prodUrl = 'https://'
+$stagingUrl = 'https://'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ErrorActionPreference='Continue'; & '.\Lab 09a\iniciar-logging.ps1';
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428080636
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428080636
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 10312
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host 'Contexto:'; Get-AzContext | Select-Object Account,Subscription | Format-Table -AutoSize;
+Contexto:
+
+Account                Subscription
+-------                ------------
+oscar.reyes@mobiik.com b224cb96-1023-4b79-83ae-b32bcac33e66
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host 'RG:'; Get-AzResourceGroup -Name 'az104-rg9' -ErrorAction SilentlyContinue | Select-Object ResourceGroupName,Location,ProvisioningState | Format-Table -AutoSize;
+RG:
+
+ResourceGroupName Location ProvisioningState
+----------------- -------- -----------------
+az104-rg9         eastus   Succeeded
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host 'Planes:'; Get-AzAppServicePlan -ResourceGroupName 'az104-rg9' -ErrorAction SilentlyContinue | Select-Object Name,Location,Sku,Tier,NumberOfWorkers,Reserved | Format-Table -AutoSize;
+Planes:
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host 'WebApps:'; Get-AzWebApp -ResourceGroupName 'az104-rg9' -ErrorAction SilentlyContinue | Select-Object Name,DefaultHostName,Location,State | Format-Table -AutoSize;
+WebApps:
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Write-Host 'hola'; Get-Date
+hola
+
+martes, 28 de abril de 2026 08:06:45 a. m.
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$log = '.\Lab 09a\ejecucion-lab09a.log';
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$cmd = "INSPECCION ESTADO LAB";
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Add-Content -Path $log -Value "`n===== $(Get-Date -Format s) :: $cmd =====";
+Add-Content : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ Add-Content -Path $log -Value "`n===== $(Get-Date -Format s) :: $cmd  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ReyesD...cion-lab09a.log:String) [Add-Content], IOException
+    + FullyQualifiedErrorId : GetContentWriterIOError,Microsoft.PowerShell.Commands.AddContentCommand
+Add-Content : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ Add-Content -Path $log -Value "`n===== $(Get-Date -Format s) :: $cmd  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ReyesD...cion-lab09a.log:S
+   tring) [Add-Content], IOException
+    + FullyQualifiedErrorId : GetContentWriterIOError,Microsoft.PowerShell.Com
+   mands.AddContentCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>"Contexto" | Tee-Object -FilePath $log -Append;
+>> ErrorTerminaci?n(out-file): "El proceso no puede obtener acceso al archivo 'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso."
+out-file : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ "Contexto" | Tee-Object -FilePath $log -Append;
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ "Contexto" | Tee-Object -FilePath $log -Append;
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.Ou
+   tFileCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>(Get-AzContext | Select-Object Account,Subscription,Tenant | Format-List | Out-String) | Tee-Object -FilePath $log -Append;
+PS>ErrorTerminaci?n(out-file): "El proceso no puede obtener acceso al archivo 'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso."
+out-file : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ (Get-AzContext | Select-Object Account,Subscription,Tenant | Format-L ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ (Get-AzContext | Select-Object Account,Subscription,Tenant | Format-L ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.Ou
+   tFileCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>"RG" | Tee-Object -FilePath $log -Append;
+>> ErrorTerminaci?n(out-file): "El proceso no puede obtener acceso al archivo 'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso."
+out-file : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ "RG" | Tee-Object -FilePath $log -Append;
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ "RG" | Tee-Object -FilePath $log -Append;
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.Ou
+   tFileCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>(Get-AzResourceGroup -Name 'az104-rg9' -ErrorAction SilentlyContinue | Select-Object ResourceGroupName,Location,ProvisioningState | Format-Table -AutoSize | Out-String) | Tee-Object -FilePath $log -Append;
+PS>ErrorTerminaci?n(out-file): "El proceso no puede obtener acceso al archivo 'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso."
+out-file : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ (Get-AzResourceGroup -Name 'az104-rg9' -ErrorAction SilentlyContinue  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ (Get-AzResourceGroup -Name 'az104-rg9' -ErrorAction SilentlyContinue  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.Ou
+   tFileCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>"Planes" | Tee-Object -FilePath $log -Append;
+>> ErrorTerminaci?n(out-file): "El proceso no puede obtener acceso al archivo 'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso."
+out-file : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ "Planes" | Tee-Object -FilePath $log -Append;
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ "Planes" | Tee-Object -FilePath $log -Append;
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.Ou
+   tFileCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>(Get-AzAppServicePlan -ResourceGroupName 'az104-rg9' -ErrorAction SilentlyContinue | Select-Object Name,Location,Tier,WorkerSize,NumberOfWorkers,Reserved | Format-Table -AutoSize | Out-String) | Tee-Object -FilePath $log -Append;
+PS>ErrorTerminaci?n(out-file): "El proceso no puede obtener acceso al archivo 'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso."
+out-file : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ (Get-AzAppServicePlan -ResourceGroupName 'az104-rg9' -ErrorAction Sil ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ (Get-AzAppServicePlan -ResourceGroupName 'az104-rg9' -ErrorAction Sil ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.Ou
+   tFileCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>"WebApps" | Tee-Object -FilePath $log -Append;
+>> ErrorTerminaci?n(out-file): "El proceso no puede obtener acceso al archivo 'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso."
+out-file : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ "WebApps" | Tee-Object -FilePath $log -Append;
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ "WebApps" | Tee-Object -FilePath $log -Append;
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.Ou
+   tFileCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>(Get-AzWebApp -ResourceGroupName 'az104-rg9' -ErrorAction SilentlyContinue | Select-Object Name,DefaultHostName,Location,State | Format-Table -AutoSize | Out-String) | Tee-Object -FilePath $log -Append;
+PS>ErrorTerminaci?n(out-file): "El proceso no puede obtener acceso al archivo 'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso."
+out-file : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ (Get-AzWebApp -ResourceGroupName 'az104-rg9' -ErrorAction SilentlyCon ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 1
++ (Get-AzWebApp -ResourceGroupName 'az104-rg9' -ErrorAction SilentlyCon ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [out-file], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.Ou
+   tFileCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-AzContext | Select-Object Account,Subscription,Tenant,Environment | Format-List
+
+
+Account      : oscar.reyes@mobiik.com
+Subscription : b224cb96-1023-4b79-83ae-b32bcac33e66
+Tenant       : ff463ea8-92b7-4e5a-a417-cf03db333692
+Environment  : AzureCloud
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-AzWebApp -ResourceGroupName 'az104-rg9' -ErrorAction SilentlyContinue | Select-Object Name,DefaultHostName,State,Location | Format-Table -AutoSize
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$global:labLog = '.\Lab 09a\ejecucion-lab09a.log'; $global:rg='az104-rg9'; $global:location='eastus'; $global:suffix=Get-Random -Minimum 10000 -Maximum 99999; $global:plan="az104-plan$($global:suffix)"; $global:app="az104web$($global:suffix)"; $global:slot='staging'; Add-Content -Path $global:labLog -Value "`n===== $(Get-Date -Format s) :: INIT VARS ====="; Add-Content -Path $global:labLog -Value "rg=$global:rg location=$global:location plan=$global:plan app=$global:app slot=$global:slot"; "rg=$global:rg location=$global:location plan=$global:plan app=$global:app slot=$global:slot"
+Add-Content : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 269
++ ... ='staging'; Add-Content -Path $global:labLog -Value "`n===== $(Get-Da ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ReyesD...cion-lab09a.log:String) [Add-Content], IOException
+    + FullyQualifiedErrorId : GetContentWriterIOError,Microsoft.PowerShell.Commands.AddContentCommand
+Add-Content : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 269
++ ... ='staging'; Add-Content -Path $global:labLog -Value "`n===== $(Get-Da ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ReyesD...cion-lab09a.log:S
+   tring) [Add-Content], IOException
+    + FullyQualifiedErrorId : GetContentWriterIOError,Microsoft.PowerShell.Com
+   mands.AddContentCommand
+
+Add-Content : El proceso no puede obtener acceso al archivo 
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 09a\ejecucion-lab09a.log' porque est? siendo 
+utilizado en otro proceso.
+En l?nea: 1 Car?cter: 361
++ ... ARS ====="; Add-Content -Path $global:labLog -Value "rg=$global:rg lo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ReyesD...cion-lab09a.log:String) [Add-Content], IOException
+    + FullyQualifiedErrorId : GetContentWriterIOError,Microsoft.PowerShell.Commands.AddContentCommand
+Add-Content : El proceso no puede obtener acceso al archivo
+'C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab
+09a\ejecucion-lab09a.log' porque est? siendo utilizado en otro proceso.
+En l?nea: 1 Car?cter: 361
++ ... ARS ====="; Add-Content -Path $global:labLog -Value "rg=$global:rg lo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ReyesD...cion-lab09a.log:S
+   tring) [Add-Content], IOException
+    + FullyQualifiedErrorId : GetContentWriterIOError,Microsoft.PowerShell.Com
+   mands.AddContentCommand
+
+rg=az104-rg9 location=eastus plan=az104-plan64110 app=az104web64110 slot=staging
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ErrorActionPreference='Stop'; New-AzResourceGroup -Name $global:rg -Location $global:location -Force | Select-Object ResourceGroupName,Location,ProvisioningState | Format-Table -AutoSize; New-AzAppServicePlan -ResourceGroupName $global:rg -Name $global:plan -Location $global:location -Tier PremiumV3 -WorkerSize Medium -NumberofWorkers 1 -Linux | Select-Object Name,Location,Tier,WorkerSize,NumberOfWorkers,Reserved | Format-Table -AutoSize; New-AzWebApp -ResourceGroupName $global:rg -Name $global:app -Location $global:location -AppServicePlan $global:plan -RuntimeStack 'PHP|8.2' | Select-Object Name,DefaultHostName,State,Location | Format-Table -AutoSize
+
+ResourceGroupName Location ProvisioningState
+----------------- -------- -----------------
+az104-rg9         eastus   Succeeded
+
+
+PS>ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'"
+>> ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'
+New-AzAppServicePlan : Operation returned an invalid status code 'Forbidden'
+En l?nea: 1 Car?cter: 190
++ ...  -AutoSize; New-AzAppServicePlan -ResourceGroupName $global:rg -Name  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzAppServicePlan], DefaultE
+   rrorResponseException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.WebApps.Cmdlets.AppServ
+   icePlans.NewAzureAppServicePlanCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ErrorActionPreference='Continue'; $regions = @('eastus2','centralus','westus2'); foreach ($r in $regions) { Write-Host "Intentando region: $r"; try { New-AzAppServicePlan -ResourceGroupName $global:rg -Name $global:plan -Location $r -Tier PremiumV3 -WorkerSize Medium -NumberofWorkers 1 -Linux -ErrorAction Stop | Select-Object Name,Location,Tier,WorkerSize,NumberOfWorkers,Reserved | Format-Table -AutoSize; $global:location=$r; break } catch { Write-Host "Fallo en $r :: $($_.Exception.Message)" } }; Write-Host "Region final: $global:location"
+Intentando region: eastus2
+PS>ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Unauthorized'"
+Fallo en eastus2 :: Operation returned an invalid status code 'Unauthorized'
+Intentando region: centralus
+PS>ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'"
+Fallo en centralus :: Operation returned an invalid status code 'Forbidden'
+Intentando region: westus2
+PS>ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'"
+Fallo en westus2 :: Operation returned an invalid status code 'Forbidden'
+Region final: eastus
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ErrorActionPreference='Continue'; Write-Host 'Probando SKU B1'; try { New-AzAppServicePlan -ResourceGroupName $global:rg -Name $global:plan -Location $global:location -Tier Basic -WorkerSize Small -NumberofWorkers 1 -Linux -ErrorAction Stop | Select-Object Name,Location,Tier,WorkerSize,NumberOfWorkers,Reserved | Format-Table -AutoSize } catch { Write-Host $_.Exception.Message }
+Probando SKU B1
+PS>ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'"
+Operation returned an invalid status code 'Forbidden'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ErrorActionPreference='Continue'; try { New-AzAppServicePlan -ResourceGroupName $global:rg -Name $global:plan -Location $global:location -Tier Basic -WorkerSize Small -NumberofWorkers 1 -Linux -ErrorAction Stop | Out-Null } catch { Write-Host 'Mensaje:' $_.Exception.Message; if ($_.ErrorDetails) { Write-Host 'ErrorDetails:' $_.ErrorDetails.Message }; $_ | Format-List * -Force }
+>> ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'"
+Mensaje: Operation returned an invalid status code 'Forbidden'
+
+
+PSMessageDetails      :
+Exception             : Microsoft.Azure.Management.WebSites.Models.DefaultError
+                        ResponseException: Operation returned an invalid
+                        status code 'Forbidden'
+                           en Microsoft.Azure.Management.WebSites.AppServicePla
+                        nsOperations.<BeginCreateOrUpdateWithHttpMessagesAsync>
+                        d__32.MoveNext()
+                        --- Fin del seguimiento de la pila de la ubicaci?n
+                        anterior donde se produjo la excepci?n ---
+                           en System.Runtime.ExceptionServices.ExceptionDispatc
+                        hInfo.Throw()
+                           en System.Runtime.CompilerServices.TaskAwaiter.Handl
+                        eNonSuccessAndDebuggerNotification(Task task)
+                           en Microsoft.Azure.Management.WebSites.AppServicePla
+                        nsOperations.<CreateOrUpdateWithHttpMessagesAsync>d__8.
+                        MoveNext()
+                        --- Fin del seguimiento de la pila de la ubicaci?n
+                        anterior donde se produjo la excepci?n ---
+                           en System.Runtime.ExceptionServices.ExceptionDispatc
+                        hInfo.Throw()
+                           en System.Runtime.CompilerServices.TaskAwaiter.Handl
+                        eNonSuccessAndDebuggerNotification(Task task)
+                           en Microsoft.Azure.Management.WebSites.AppServicePla
+                        nsOperationsExtensions.<CreateOrUpdateAsync>d__7.MoveNe
+                        xt()
+                        --- Fin del seguimiento de la pila de la ubicaci?n
+                        anterior donde se produjo la excepci?n ---
+                           en System.Runtime.ExceptionServices.ExceptionDispatc
+                        hInfo.Throw()
+                           en System.Runtime.CompilerServices.TaskAwaiter.Handl
+                        eNonSuccessAndDebuggerNotification(Task task)
+                           en Microsoft.Azure.Management.WebSites.AppServicePla
+                        nsOperationsExtensions.CreateOrUpdate(IAppServicePlansO
+                        perations operations, String resourceGroupName, String
+                        name, AppServicePlan appServicePlan)
+                           en Microsoft.Azure.Commands.WebApps.Cmdlets.AppServi
+                        cePlans.NewAzureAppServicePlanCmdlet.ExecuteCmdlet()
+                           en Microsoft.WindowsAzure.Commands.Utilities.Common.
+                        AzurePSCmdlet.ProcessRecord()
+TargetObject          :
+CategoryInfo          : CloseError: (:) [New-AzAppServicePlan],
+                        DefaultErrorResponseException
+FullyQualifiedErrorId : Microsoft.Azure.Commands.WebApps.Cmdlets.AppServicePlan
+                        s.NewAzureAppServicePlanCmdlet
+ErrorDetails          :
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : en <ScriptBlock>, <sin archivo>: l?nea 1
+PipelineIterationInfo : {}
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-AzResourceProvider -ProviderNamespace Microsoft.Web | Select-Object ProviderNamespace,RegistrationState,ResourceTypes | Format-List
+
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {publishingUsers}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {ishostnameavailable}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {validate}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {isusernameavailable}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {generateGithubAccessTokenForAppserviceCLI}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sourceControls}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {availableStacks}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {webAppStacks}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/webAppStacks}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {functionAppStacks}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/functionAppStacks}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {staticSites}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/previewStaticSiteWorkflowFile}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/staticSitesOperationStatuses}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/staticSitesOperationResults}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {staticSites/userProvidedFunctionApps}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {staticSites/linkedBackends}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {staticSites/builds/linkedBackends}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {staticSites/databaseConnections}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {staticSites/builds/databaseConnections}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {staticSites/builds}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {staticSites/builds/userProvidedFunctionApps}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {staticSiteRegions}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {listSitesAssignedToHostName}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/getNetworkPolicies}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/operations}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/operationResults}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/networkConfig}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/slots/networkConfig}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/hostNameBindings}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/slots/hostNameBindings}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {operations}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {certificates}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/certificates}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/slots/certificates}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {serverFarms}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/slots}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {runtimes}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {recommendations}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {resourceHealthMetadata}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {aseregions}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {georegions}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/premieraddons}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {hostingEnvironments}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {hostingEnvironments/multiRolePools}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {hostingEnvironments/workerPools}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {kubeEnvironments}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {deploymentLocations}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {deletedSites}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/deletedSites}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {ishostingenvironmentnameavailable}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/deleteVirtualNetworkOrSubnets}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/validateDeleteVirtualNetworkOrSubnets}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/listVirtualNetworkIntegrations}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/purgeUnusedVirtualNetworkIntegration}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {connections}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {customApis}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/listWsdlInterfaces}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/extractApiDefinitionFromWsdl}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/managedApis}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/runtimes}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/apiOperations}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {connectionGateways}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/connectionGatewayInstallations}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {checkNameAvailability}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/checkNameAvailability}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {billingMeters}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {verifyHostingEnvironmentVnet}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {serverFarms/eventGridFilters}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/eventGridFilters}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {sites/slots/eventGridFilters}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {hostingEnvironments/eventGridFilters}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {serverFarms/firstPartyApps}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {serverFarms/firstPartyApps/keyVaultSettings}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {containerApps}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {customhostnameSites}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/usages}
+
+ProviderNamespace : Microsoft.Web
+RegistrationState : Registered
+ResourceTypes     : {locations/notifyNetworkSecurityPerimeterUpdatesAvailable}
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$start = (Get-Date).AddHours(-2); Get-AzLog -ResourceGroupName 'az104-rg9' -StartTime $start -DetailedOutput | Where-Object { $_.OperationName.Value -like '*serverfarms/write*' -or $_.OperationName.Value -like '*Microsoft.Web/serverfarms/write*' } | Select-Object EventTimestamp,Status,SubStatus,Caller,OperationName,ResourceId,Description | Format-List
+INFORMACI?N: Loaded Module 'Az.ActionGroup'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Monitor'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Monitor'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.DataCollectionRule'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Monitor'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Metricdata'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.MonitorWorkspace'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.PipelineGroup'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Monitor'
+ADVERTENCIA: [Get-AzActivityLog] Parameter deprecation: The DetailedOutput parameter will be deprecated in a future breaking change release.
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$start = (Get-Date).AddHours(-2); Get-AzLog -ResourceGroupName 'az104-rg9' -StartTime $start | Select-Object -First 20 EventTimestamp,Status,SubStatus,OperationName,ResourceGroupName,ResourceId | Format-Table -AutoSize
+ADVERTENCIA: [Get-AzActivityLog] Parameter deprecation: The DetailedOutput parameter will be deprecated in a future breaking change release.
+
+EventTimestamp            Status    SubStatus                         Operation
+                                                                      Name
+--------------            ------    ---------                         ---------
+28/04/2026 02:09:26 p. m. Failed    Forbidden                         Update...
+28/04/2026 02:09:26 p. m. Failed                                      'deny'...
+28/04/2026 02:09:26 p. m. Started                                     Update...
+28/04/2026 02:09:26 p. m. Failed    Unauthorized                      Update...
+28/04/2026 02:09:22 p. m. Started                                     Update...
+28/04/2026 02:09:06 p. m. Failed    Forbidden                         Update...
+28/04/2026 02:09:06 p. m. Failed                                      'deny'...
+28/04/2026 02:09:06 p. m. Started                                     Update...
+28/04/2026 02:09:05 p. m. Succeeded OK (HTTP Status Code: 200)        Update...
+28/04/2026 02:09:03 p. m. Started                                     Update...
+28/04/2026 02:05:42 p. m. Failed    Not Found (HTTP Status Code: 404) Swap W...
+28/04/2026 02:05:42 p. m. Started                                     Swap W...
+28/04/2026 02:05:21 p. m. Failed    Not Found (HTTP Status Code: 404) Update...
+28/04/2026 02:05:21 p. m. Started                                     Update...
+28/04/2026 02:05:18 p. m. Failed    Forbidden                         Update...
+28/04/2026 02:05:18 p. m. Failed                                      'deny'...
+28/04/2026 02:05:18 p. m. Started                                     Update...
+28/04/2026 02:05:17 p. m. Succeeded Created (HTTP Status Code: 201)   Update...
+28/04/2026 02:05:14 p. m. Started                                     Update...
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$start = (Get-Date).AddHours(-2); Get-AzLog -ResourceGroupName 'az104-rg9' -StartTime $start | Where-Object { $_.Status.Value -eq 'Failed' } | Select-Object -First 8 EventTimestamp,SubStatus,OperationName,ResourceId,Caller,Authorization,Properties | Format-List
+ADVERTENCIA: [Get-AzActivityLog] Parameter deprecation: The DetailedOutput parameter will be deprecated in a future breaking change release.
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$start=(Get-Date).AddHours(-2); $logs=Get-AzLog -ResourceGroupName 'az104-rg9' -StartTime $start | Where-Object { $_.Status.Value -eq 'Failed' }; foreach($l in $logs | Select-Object -First 10){ Write-Host '---'; Write-Host ($l.EventTimestamp); Write-Host ('Operation: ' + $l.OperationName.LocalizedValue); Write-Host ('SubStatus: ' + $l.SubStatus.LocalizedValue); Write-Host ('ResourceId: ' + $l.ResourceId); Write-Host ('Caller: ' + $l.Caller) }
+ADVERTENCIA: [Get-AzActivityLog] Parameter deprecation: The DetailedOutput parameter will be deprecated in a future breaking change release.
+PS>CommandInvocation(Out-Null): "Out-Null"
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-AzAppServicePlan | Select-Object -First 20 Name,ResourceGroup,Location,Tier,WorkerSize,NumberOfWorkers,Reserved | Format-Table -AutoSize
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>$ErrorActionPreference='Continue'; $tmpRg = 'tmp-az104-rg9'; New-AzResourceGroup -Name $tmpRg -Location 'eastus' -Force | Out-Null; try { New-AzAppServicePlan -ResourceGroupName $tmpRg -Name ('tmp-plan' + (Get-Random -Minimum 1000 -Maximum 9999)) -Location 'eastus' -Tier Basic -WorkerSize Small -NumberofWorkers 1 -Linux -ErrorAction Stop | Select-Object Name,ResourceGroup,Location,Tier | Format-Table -AutoSize } catch { Write-Host ('FALLO: ' + $_.Exception.Message) }
+PS>ErrorTerminaci?n(New-AzAppServicePlan): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation returned an invalid status code 'Forbidden'"
+FALLO: Operation returned an invalid status code 'Forbidden'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
+PS>Get-AzDenyAssignment -Scope "/subscriptions/$((Get-AzContext).Subscription.Id)" | Select-Object -First 10 DenyAssignmentName,Scope,Permissions,IsSystemProtected | Format-List
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semilleroPS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero> ]633;B
