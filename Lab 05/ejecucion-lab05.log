@@ -1333,3 +1333,84 @@ CoreServicesVM IP privada: 10.0.0.4
 Password generado para 'localadmin': NF9wQqE4V8N5N##x
 Variables en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05\lab05-vars.ps1
 ]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>.\cleanup-lab05.ps1
+Confirmar
+?Est? seguro de que desea realizar esta acci?n?
+Se est? realizando la operaci?n "Eliminar resource group y todos sus recursos" en el destino "az104-rg05".
+&S?  S? a t&odo  &No  No a &todo  S&uspender
+o
+Se envio la eliminacion de 'az104-rg05' en segundo plano.
+Puedes revisar progreso con: Get-AzResourceGroup -Name az104-rg05
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg05
+
+
+ResourceGroupName : az104-rg05
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg05
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg05
+
+
+ResourceGroupName : az104-rg05
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg05
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg05
+
+
+ResourceGroupName : az104-rg05
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg05
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg05
+
+
+ResourceGroupName : az104-rg05
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg05
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg05
+
+
+ResourceGroupName : az104-rg05
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg05
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg05
+
+
+ResourceGroupName : az104-rg05
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg05
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 05PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 05> ]633;B
