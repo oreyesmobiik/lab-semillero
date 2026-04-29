@@ -1,0 +1,853 @@
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428154846
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 21140
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06\ejecucion-lab06.log
+Iniciando LAB 06 en RG=az104-rg06, region=eastus2
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+Tamano de VM solicitado: Standard_D2s_v3
+Orden de intento de tamanos en eastus2: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+INFORMACI?N: Loaded Module 'Az.Network'
+ADVERTENCIA: Algunos nombres de comando importados del m?dulo 'Microsoft.Azure.PowerShell.Cmdlets.Network' incluyen verbos no aprobados que podr?an dificultar su reconocimiento. Para encontrar los comandos con verbos no aprobados, vuelva a ejecutar el comando Import-Module con el par?metro Verbose. Para obtener una lista de verbos aprobados, escriba Get-Verb.
+VNet az104-06-vnet1 creada
+INFORMACI?N: Loaded Module 'Az.Compute'
+PS>ErrorTerminaci?n(Add-Type): "No se pueden cargar uno o varios tipos requeridos. Recupere la propiedad LoaderExceptions para obtener m?s informaci?n."
+Intentando crear VM az104-06-vm0 con tamano Standard_D2s_v3
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+VM az104-06-vm0 creada con tamano Standard_D2s_v3
+Intentando crear VM az104-06-vm1 con tamano Standard_D2s_v3
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+VM az104-06-vm1 creada con tamano Standard_D2s_v3
+Intentando crear VM az104-06-vm2 con tamano Standard_D2s_v3
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 2870ec97-88c0-400a-85ef-4cf951a3bd05"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_D2s_v3. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 2870ec97-88c0-400a-85ef-4cf951a3bd05
+Intentando crear VM az104-06-vm2 con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : b1a0f0bc-beb6-4b9c-b4fe-b653c17973ab"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_B1s. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : b1a0f0bc-beb6-4b9c-b4fe-b653c17973ab
+Intentando crear VM az104-06-vm2 con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 6c711d8e-dd64-43a5-af2b-051283f4ef23"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_B1ms. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 6c711d8e-dd64-43a5-af2b-051283f4ef23
+Intentando crear VM az104-06-vm2 con tamano Standard_DS1_v2
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 802dad24-ee7c-420d-89e4-0716bed90f1a"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_DS1_v2. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 802dad24-ee7c-420d-89e4-0716bed90f1a
+Intentando crear VM az104-06-vm2 con tamano Standard_B2s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : a8190a57-dbd3-409f-889c-1d047d3b5e72"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_B2s. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : a8190a57-dbd3-409f-889c-1d047d3b5e72
+Intentando crear VM az104-06-vm2 con tamano Standard_B2ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : c9bed761-279d-42b5-bfe7-9bcbe180c094"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_B2ms. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: eastus2, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22eastus2%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : c9bed761-279d-42b5-bfe7-9bcbe180c094
+PS>ErrorTerminaci?n(): "No fue posible crear la VM 'az104-06-vm2' en 'eastus2' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'az104-06-vm2' en 'eastus2' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'az104-06-vm2' en 'eastus2' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms"
+No fue posible crear la VM 'az104-06-vm2' en 'eastus2' con los tamanos probados: Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+No fue posible crear la VM 'az104-06-vm2' en 'eastus2' con los tamanos probados: Standard_D2s_v3, Standard_B1s,
+Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06\ejecutar-lab06.ps1: 148 Car?cter: 5
++     throw "No fue posible crear la VM '$VmName' en '$Location' con lo ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (No fue posible ..., Standard_B2ms:String) [], RuntimeException
+    + FullyQualifiedErrorId : No fue posible crear la VM 'az104-06-vm2' en 'eastus2' con los tamanos probados:
+   Standard_D2s_v3, Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06> ]633;B
+PS>.\cleanup-lab06.ps1 -Confirm:$false
+ADVERTENCIA: Unable to acquire token for tenant '8a609129-6043-4862-a3ef-950ba4573f90' with error 'Authentication failed against tenant 8a609129-6043-4862-a3ef-950ba4573f90. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). If you need to access subscriptions in that tenant, please rerun 'Connect-AzAccount' with additional parameter '-TenantId 8a609129-6043-4862-a3ef-950ba4573f90'.'
+Se envio la eliminacion de 'az104-rg06' en segundo plano.
+Puedes revisar progreso con: Get-AzResourceGroup -Name az104-rg06
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg06
+
+
+ResourceGroupName : az104-rg06
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg06
+Get-AzResourceGroup : 04:07:08 p. m. - Provided resource group does not exist.
+En l?nea: 1 Car?cter: 1
++ Get-AzResourceGroup -Name az104-rg06
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-AzResourceGroup], Exception
+    + FullyQualifiedErrorId : 
+Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.GetAzureResourceGroupCmdlet
+Get-AzResourceGroup : 04:07:08 p. m. - Provided resource group does not exist.
+En l?nea: 1 Car?cter: 1
++ Get-AzResourceGroup -Name az104-rg06
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-AzResourceGroup], Exception
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.GetAzureResourceG
+   roupCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06> ]633;B
+PS>.\ejecutar-lab06.ps1 -Location eastus2
+ADVERTENCIA: Unable to acquire token for tenant '8a609129-6043-4862-a3ef-950ba4573f90' with error 'Authentication failed against tenant 8a609129-6043-4862-a3ef-950ba4573f90. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). If you need to access subscriptions in that tenant, please rerun 'Connect-AzAccount' with additional parameter '-TenantId 8a609129-6043-4862-a3ef-950ba4573f90'.'
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428160721
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428160721
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 21140
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06\ejecucion-lab06.log
+Iniciando LAB 06 en RG=az104-rg06, region=eastus2
+Tamano de VM solicitado: Standard_B1s
+Orden de intento de tamanos en eastus2: Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+VNet az104-06-vnet1 creada
+Intentando crear VM az104-06-vm0 con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 8515f711-c9a7-48cb-befa-56f66675a90d"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_B1s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 8515f711-c9a7-48cb-befa-56f66675a90d
+Intentando crear VM az104-06-vm0 con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : bb1f25fd-c842-4ace-8420-fa074bedb8e8"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_B1ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : bb1f25fd-c842-4ace-8420-fa074bedb8e8
+Intentando crear VM az104-06-vm0 con tamano Standard_DS1_v2
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : a8751894-86c6-4aeb-9233-f373c8a31982"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_DS1_v2. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : a8751894-86c6-4aeb-9233-f373c8a31982
+Intentando crear VM az104-06-vm0 con tamano Standard_B2s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 1046054d-c016-4b41-914b-3307334d3abb"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_B2s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 1046054d-c016-4b41-914b-3307334d3abb
+Intentando crear VM az104-06-vm0 con tamano Standard_B2ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 57ce67db-1e45-4a4f-b677-03b4612857d5"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_B2ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 57ce67db-1e45-4a4f-b677-03b4612857d5
+PS>ErrorTerminaci?n(): "No fue posible crear la VM 'az104-06-vm0' en 'eastus2' con los tamanos probados: Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'az104-06-vm0' en 'eastus2' con los tamanos probados: Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'az104-06-vm0' en 'eastus2' con los tamanos probados: Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms"
+No fue posible crear la VM 'az104-06-vm0' en 'eastus2' con los tamanos probados: Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+No fue posible crear la VM 'az104-06-vm0' en 'eastus2' con los tamanos probados: Standard_B1s, Standard_B1ms,
+Standard_DS1_v2, Standard_B2s, Standard_B2ms
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06\ejecutar-lab06.ps1: 148 Car?cter: 5
++     throw "No fue posible crear la VM '$VmName' en '$Location' con lo ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (No fue posible ..., Standard_B2ms:String) [], RuntimeException
+    + FullyQualifiedErrorId : No fue posible crear la VM 'az104-06-vm0' en 'eastus2' con los tamanos probados:
+   Standard_B1s, Standard_B1ms, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06> ]633;B
+PS>.\ejecutar-lab06.ps1 -Location eastus2
+ADVERTENCIA: Unable to acquire token for tenant '8a609129-6043-4862-a3ef-950ba4573f90' with error 'Authentication failed against tenant 8a609129-6043-4862-a3ef-950ba4573f90. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). If you need to access subscriptions in that tenant, please rerun 'Connect-AzAccount' with additional parameter '-TenantId 8a609129-6043-4862-a3ef-950ba4573f90'.'
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260428161550
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260428161550
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 21140
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06\ejecucion-lab06.log
+Iniciando LAB 06 en RG=az104-rg06, region=eastus2
+ADVERTENCIA: No se encontro capacidad util en 'eastus2'. Se usara 'centralus'.
+Tamano de VM solicitado: Standard_B1s
+Orden de intento de tamanos en centralus: Standard_B1s, Standard_B1ms, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standard_A1_v2, Standard_A2_v2, Standard_B2s, Standard_B2ms
+VNet az104-06-vnet1 ya existia
+Intentando crear VM az104-06-vm0 con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : 48040a69-578a-4888-b772-d6f5f2b67c74"
+PS>ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : 48040a69-578a-4888-b772-d6f5f2b67c74"
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : 48040a69-578a-4888-b772-d6f5f2b67c74"
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : 48040a69-578a-4888-b772-d6f5f2b67c74"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : 48040a69-578a-4888-b772-d6f5f2b67c74
+New-AzVM : Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Micr
+osoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/M
+icrosoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget:
+StatusCode: 404
+ReasonPhrase:
+OperationID : 48040a69-578a-4888-b772-d6f5f2b67c74
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06\ejecutar-lab06.ps1: 176 Car?cter: 13
++             New-AzVM -ResourceGroupName $ResourceGroupName -Location  ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzVM], ComputeCloudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.Compute.NewAzureVMCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5cLab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\Lab 06> ]633;B
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260429081525
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 19276
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06\ejecucion-lab06.log
+Iniciando LAB 06 en RG=az104-rg06, region=eastus2
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Accounts'
+INFORMACI?N: Loaded Module 'Az.Resources'
+INFORMACI?N: Loaded Module 'Az.Compute'
+PS>ErrorTerminaci?n(Add-Type): "No se pueden cargar uno o varios tipos requeridos. Recupere la propiedad LoaderExceptions para obtener m?s informaci?n."
+ADVERTENCIA: No se encontro capacidad util en 'eastus2'. Se usara 'centralus'.
+Tamano de VM solicitado: Standard_B1s
+Orden de intento de tamanos en centralus: Standard_B1s, Standard_B1ms, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standard_A1_v2, Standard_A2_v2, Standard_B2s, Standard_B2ms
+INFORMACI?N: Loaded Module 'Az.Network'
+ADVERTENCIA: Algunos nombres de comando importados del m?dulo 'Microsoft.Azure.PowerShell.Cmdlets.Network' incluyen verbos no aprobados que podr?an dificultar su reconocimiento. Para encontrar los comandos con verbos no aprobados, vuelva a ejecutar el comando Import-Module con el par?metro Verbose. Para obtener una lista de verbos aprobados, escriba Get-Verb.
+VNet az104-06-vnet1 ya existia
+Intentando crear VM az104-06-vm0 con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : a9568904-1e50-4ca3-9df5-8cbfc85bb106"
+PS>ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : a9568904-1e50-4ca3-9df5-8cbfc85bb106"
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : a9568904-1e50-4ca3-9df5-8cbfc85bb106"
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : a9568904-1e50-4ca3-9df5-8cbfc85bb106"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Microsoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget: 
+StatusCode: 404
+ReasonPhrase: 
+OperationID : a9568904-1e50-4ca3-9df5-8cbfc85bb106
+New-AzVM : Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/Micr
+osoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorCode: NotFound
+ErrorMessage: Resource /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06/providers/M
+icrosoft.Network/networkInterfaces/az104-06-nic0 not found.
+ErrorTarget:
+StatusCode: 404
+ReasonPhrase:
+OperationID : a9568904-1e50-4ca3-9df5-8cbfc85bb106
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06\ejecutar-lab06.ps1: 176 Car?cter: 13
++             New-AzVM -ResourceGroupName $ResourceGroupName -Location  ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzVM], ComputeCloudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.Compute.NewAzureVMCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
+PS>.\ejecutar-lab06.ps1 -Location eastus2
+ADVERTENCIA: Unable to acquire token for tenant '8a609129-6043-4862-a3ef-950ba4573f90' with error 'Authentication failed against tenant 8a609129-6043-4862-a3ef-950ba4573f90. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). If you need to access subscriptions in that tenant, please rerun 'Connect-AzAccount' with additional parameter '-TenantId 8a609129-6043-4862-a3ef-950ba4573f90'.'
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260429091716
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260429091716
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 19276
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06\ejecucion-lab06.log
+Iniciando LAB 06 en RG=az104-rg06, region solicitada=eastus2, region efectiva=eastus2
+Tamano de VM solicitado: Standard_B1s
+Orden de intento de tamanos en eastus2: Standard_B1s, Standard_B1ms, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standard_A1_v2, Standard_A2_v2, Standard_B2s, Standard_B2ms
+VNet az104-06-vnet1 ya existia
+Intentando crear VM az104-06-vm0 con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : dcdc0464-6e30-42f6-a454-87b8ca721878"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_B1s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : dcdc0464-6e30-42f6-a454-87b8ca721878
+Intentando crear VM az104-06-vm0 con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 008b31e3-2e34-4494-ac33-83154f734769"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_B1ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 008b31e3-2e34-4494-ac33-83154f734769
+Intentando crear VM az104-06-vm0 con tamano Standard_D2s_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : a7e25c69-3b86-447b-8974-f144a662af29"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_D2s_v5. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : a7e25c69-3b86-447b-8974-f144a662af29
+Intentando crear VM az104-06-vm0 con tamano Standard_D2s_v4
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v4' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v4' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : e64ce72a-1c95-41d7-95a1-f3d2f5a7c761"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_D2s_v4. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v4' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v4' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : e64ce72a-1c95-41d7-95a1-f3d2f5a7c761
+Intentando crear VM az104-06-vm0 con tamano Standard_D2as_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 0a5b2d22-80da-4a6f-80cb-5a25f7daf6d1"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_D2as_v5. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v5' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 0a5b2d22-80da-4a6f-80cb-5a25f7daf6d1
+Intentando crear VM az104-06-vm0 con tamano Standard_DS1_v2
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 1873b50b-e52f-49d9-ba3e-61b1bc075b5c"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_DS1_v2. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_DS1_v2' is currently not available in location 'eastus2'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 1873b50b-e52f-49d9-ba3e-61b1bc075b5c
+Intentando crear VM az104-06-vm0 con tamano Standard_A1_v2
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorCode: BadRequest
+ErrorMessage: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorTarget: 
+StatusCode: 400
+ReasonPhrase: 
+OperationID : bd8cd645-bc6c-4ad5-9a3b-4d66ddd1e78a"
+PS>ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorCode: BadRequest
+ErrorMessage: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorTarget: 
+StatusCode: 400
+ReasonPhrase: 
+OperationID : bd8cd645-bc6c-4ad5-9a3b-4d66ddd1e78a"
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorCode: BadRequest
+ErrorMessage: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorTarget: 
+StatusCode: 400
+ReasonPhrase: 
+OperationID : bd8cd645-bc6c-4ad5-9a3b-4d66ddd1e78a"
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorCode: BadRequest
+ErrorMessage: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorTarget: 
+StatusCode: 400
+ReasonPhrase: 
+OperationID : bd8cd645-bc6c-4ad5-9a3b-4d66ddd1e78a"
+Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorCode: BadRequest
+ErrorMessage: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more information, see https://aka.ms/azuregen2vm
+ErrorTarget: 
+StatusCode: 400
+ReasonPhrase: 
+OperationID : bd8cd645-bc6c-4ad5-9a3b-4d66ddd1e78a
+New-AzVM : The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create
+operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the
+selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more
+information, see https://aka.ms/azuregen2vm
+ErrorCode: BadRequest
+ErrorMessage: The selected VM size 'Standard_A1_v2' cannot boot Hypervisor Generation '2'. If this was a Create
+operation please check that the Hypervisor Generation of the Image matches the Hypervisor Generation of the
+selected VM Size. If this was an Update operation please select a Hypervisor Generation '2' VM Size. For more
+information, see https://aka.ms/azuregen2vm
+ErrorTarget:
+StatusCode: 400
+ReasonPhrase:
+OperationID : bd8cd645-bc6c-4ad5-9a3b-4d66ddd1e78a
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06\ejecutar-lab06.ps1: 176 Car?cter: 13
++             New-AzVM -ResourceGroupName $ResourceGroupName -Location  ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzVM], ComputeCloudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.Compute.NewAzureVMCommand
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
+PS>.\cleanup-lab06.ps1 -Confirm:$false
+ADVERTENCIA: Unable to acquire token for tenant '8a609129-6043-4862-a3ef-950ba4573f90' with error 'Authentication failed against tenant 8a609129-6043-4862-a3ef-950ba4573f90. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). If you need to access subscriptions in that tenant, please rerun 'Connect-AzAccount' with additional parameter '-TenantId 8a609129-6043-4862-a3ef-950ba4573f90'.'
+Se envio la eliminacion de 'az104-rg06' en segundo plano.
+Puedes revisar progreso con: Get-AzResourceGroup -Name az104-rg06
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg06
+
+
+ResourceGroupName : az104-rg06
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg06
+
+
+ResourceGroupName : az104-rg06
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg06
+
+
+ResourceGroupName : az104-rg06
+Location          : eastus2
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg06
+Get-AzResourceGroup : 09:23:05 a. m. - Provided resource group does not exist.
+En l?nea: 1 Car?cter: 1
++ Get-AzResourceGroup -Name az104-rg06
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-AzResourceGroup], Exception
+    + FullyQualifiedErrorId : 
+Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.GetAzureResourceGroupCmdlet
+Get-AzResourceGroup : 09:23:05 a. m. - Provided resource group does not exist.
+En l?nea: 1 Car?cter: 1
++ Get-AzResourceGroup -Name az104-rg06
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-AzResourceGroup], Exception
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.GetAzureResourceG
+   roupCmdlet
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
+PS>.\ejecutar-lab06.ps1 -Location eastus2
+ADVERTENCIA: Unable to acquire token for tenant '8a609129-6043-4862-a3ef-950ba4573f90' with error 'Authentication failed against tenant 8a609129-6043-4862-a3ef-950ba4573f90. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). If you need to access subscriptions in that tenant, please rerun 'Connect-AzAccount' with additional parameter '-TenantId 8a609129-6043-4862-a3ef-950ba4573f90'.'
+**********************
+Fin de la transcripci?n de Windows PowerShell
+Hora de finalizaci?n: 20260429092322
+**********************
+**********************
+Inicio de la transcripci?n de Windows PowerShell
+Hora de inicio: 20260429092322
+Nombre de usuario: AzureAD\ReyesDeLaCruzOscar(C
+Usuario RunAs: AzureAD\ReyesDeLaCruzOscar(C
+Nombre de la configuraci?n: 
+M?quina: COM-5CD231739Q (Microsoft Windows NT 10.0.26100.0)
+Aplicaci?n host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ReyesDeLaCruzOscar(C\AppData\Local\Programs\Microsoft VS Code\10c8e557c8\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 19276
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06\ejecucion-lab06.log
