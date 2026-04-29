@@ -851,3 +851,350 @@ PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
 Transcript activo en: C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06\ejecucion-lab06.log
+ADVERTENCIA: No se encontro capacidad util en 'eastus2'. Se usara 'centralus'.
+Iniciando LAB 06 en RG=az104-rg06, region solicitada=eastus2, region efectiva=centralus
+Tamano de VM solicitado: Standard_B1s
+Orden de intento de tamanos en centralus: Standard_B1s, Standard_B1ms, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+VNet az104-06-vnet1 creada
+Intentando crear VM az104-06-vm0 con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 10e57d46-f248-4f0b-8f95-05e88c2b3066"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_B1s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 10e57d46-f248-4f0b-8f95-05e88c2b3066
+Intentando crear VM az104-06-vm0 con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 73d712a0-629e-44c5-ac49-49dba368bcee"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_B1ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 73d712a0-629e-44c5-ac49-49dba368bcee
+Intentando crear VM az104-06-vm0 con tamano Standard_D2s_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 89d419b6-f137-483a-99fb-7fd7d6b21b03"
+ADVERTENCIA: No se pudo crear az104-06-vm0 con Standard_D2s_v5. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 89d419b6-f137-483a-99fb-7fd7d6b21b03
+Intentando crear VM az104-06-vm0 con tamano Standard_D2s_v4
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+VM az104-06-vm0 creada con tamano Standard_D2s_v4
+Intentando crear VM az104-06-vm1 con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 267551f7-4ab3-455c-bb20-30e0dde8c457"
+ADVERTENCIA: No se pudo crear az104-06-vm1 con Standard_B1s. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 267551f7-4ab3-455c-bb20-30e0dde8c457
+Intentando crear VM az104-06-vm1 con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : b5989626-2a99-44b8-86a3-6c0d185ef873"
+ADVERTENCIA: No se pudo crear az104-06-vm1 con Standard_B1ms. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1ms' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : b5989626-2a99-44b8-86a3-6c0d185ef873
+Intentando crear VM az104-06-vm1 con tamano Standard_D2s_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 7a1ae976-0b71-4525-90ee-9845cb29f89c"
+ADVERTENCIA: No se pudo crear az104-06-vm1 con Standard_D2s_v5. Se intentara el siguiente tamano. Detalle: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v5' is currently not available in location 'centralus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 7a1ae976-0b71-4525-90ee-9845cb29f89c
+Intentando crear VM az104-06-vm1 con tamano Standard_D2s_v4
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+VM az104-06-vm1 creada con tamano Standard_D2s_v4
+Intentando crear VM az104-06-vm2 con tamano Standard_B1s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 49b4147a-d33d-43c6-a4f8-fe82bdc9f669"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_B1s. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 49b4147a-d33d-43c6-a4f8-fe82bdc9f669
+Intentando crear VM az104-06-vm2 con tamano Standard_B1ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : ad6553c7-5af2-42ea-8d9f-ac0facc4af7c"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_B1ms. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : ad6553c7-5af2-42ea-8d9f-ac0facc4af7c
+Intentando crear VM az104-06-vm2 con tamano Standard_D2s_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 05a0042a-43f6-4706-af12-ddfb5ae162ca"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_D2s_v5. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 05a0042a-43f6-4706-af12-ddfb5ae162ca
+Intentando crear VM az104-06-vm2 con tamano Standard_D2s_v4
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 030f0584-1577-4806-96d8-30f0c8acbb89"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_D2s_v4. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 030f0584-1577-4806-96d8-30f0c8acbb89
+Intentando crear VM az104-06-vm2 con tamano Standard_D2as_v5
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : f1c4b7d4-0f72-4c3a-8e05-fe688222a83e"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_D2as_v5. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : f1c4b7d4-0f72-4c3a-8e05-fe688222a83e
+Intentando crear VM az104-06-vm2 con tamano Standard_DS1_v2
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 69c16452-32db-495e-8f65-bd64f2832cea"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_DS1_v2. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 1, (Minimum) New Limit Required: 5. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:5,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 69c16452-32db-495e-8f65-bd64f2832cea
+Intentando crear VM az104-06-vm2 con tamano Standard_B2s
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 5d1ea4a1-d633-4ef3-9f64-da49e6dde8e9"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_B2s. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 5d1ea4a1-d633-4ef3-9f64-da49e6dde8e9
+Intentando crear VM az104-06-vm2 con tamano Standard_B2ms
+ADVERTENCIA: Upcoming breaking changes in the cmdlet 'New-AzVM' :
+The default VM size will change from 'Standard_D2s_v3' to 'Standard_D2s_v5'.
+- This change will take effect on '01/11/2025'
+- The change is expected to take effect in Az version : '15.0.0'
+- The change is expected to take effect in Az.Compute version : '11.0.0'
+Note : Go to https://aka.ms/azps-changewarnings for steps to suppress this breaking change warning, and other information on breaking changes in Azure PowerShell.
+>> ErrorTerminaci?n(New-AzVM): "Se detuvo el comando en ejecuci?n porque la variable de preferencia "ErrorActionPreference" o un par?metro com?n se han establecido en Stop: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : de0d5bca-ad62-4c28-8b5d-e4640fbe4ed1"
+ADVERTENCIA: No se pudo crear az104-06-vm2 con Standard_B2ms. Se intentara el siguiente tamano. Detalle: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorCode: OperationNotAllowed
+ErrorMessage: Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: centralus, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Setup Alerts when Quota reaches threshold. Learn more at https://aka.ms/quotamonitoringalerting . Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/UsageAndQuota.ReactView/Parameters/%7B%22subscriptionId%22:%22b224cb96-1023-4b79-83ae-b32bcac33e66%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22centralus%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ?Details? section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests
+ErrorTarget: 
+StatusCode: 409
+ReasonPhrase: 
+OperationID : de0d5bca-ad62-4c28-8b5d-e4640fbe4ed1
+PS>ErrorTerminaci?n(): "No fue posible crear la VM 'az104-06-vm2' en 'centralus' con los tamanos probados: Standard_B1s, Standard_B1ms, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standard_B2s, Standard_B2ms"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'az104-06-vm2' en 'centralus' con los tamanos probados: Standard_B1s, Standard_B1ms, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standard_B2s, Standard_B2ms"
+>> ErrorTerminaci?n(): "No fue posible crear la VM 'az104-06-vm2' en 'centralus' con los tamanos probados: Standard_B1s, Standard_B1ms, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standard_B2s, Standard_B2ms"
+No fue posible crear la VM 'az104-06-vm2' en 'centralus' con los tamanos probados: Standard_B1s, Standard_B1ms, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+No fue posible crear la VM 'az104-06-vm2' en 'centralus' con los tamanos probados: Standard_B1s, Standard_B1ms,
+Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standard_B2s, Standard_B2ms
+En C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06\ejecutar-lab06.ps1: 213 Car?cter: 5
++     throw "No fue posible crear la VM '$VmName' en '$Location' con lo ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (No fue posible ..., Standard_B2ms:String) [], RuntimeException
+    + FullyQualifiedErrorId : No fue posible crear la VM 'az104-06-vm2' en 'centralus' con los tamanos probados
+   : Standard_B1s, Standard_B1ms, Standard_D2s_v5, Standard_D2s_v4, Standard_D2as_v5, Standard_DS1_v2, Standar
+  d_B2s, Standard_B2ms
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
+PS>.\cleanup-lab06.ps1 -Confirm:$false
+ADVERTENCIA: Unable to acquire token for tenant '8a609129-6043-4862-a3ef-950ba4573f90' with error 'Authentication failed against tenant 8a609129-6043-4862-a3ef-950ba4573f90. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). If you need to access subscriptions in that tenant, please rerun 'Connect-AzAccount' with additional parameter '-TenantId 8a609129-6043-4862-a3ef-950ba4573f90'.'
+Se envio la eliminacion de 'az104-rg06' en segundo plano.
+Puedes revisar progreso con: Get-AzResourceGroup -Name az104-rg06
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
+PS>Get-AzResourceGroup -Name az104-rg06
+
+
+ResourceGroupName : az104-rg06
+Location          : centralus
+ProvisioningState : Deleting
+Tags              :
+ResourceId        : /subscriptions/b224cb96-1023-4b79-83ae-b32bcac33e66/resourceGroups/az104-rg06
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cReyesDeLaCruzOscar(C\x5cDownloads\x5cGitHub\x5clab-semillero\x5clab 06PS C:\Users\ReyesDeLaCruzOscar(C\Downloads\GitHub\lab-semillero\lab 06> ]633;B
